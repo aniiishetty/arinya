@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#06aa5e">
+    <meta name="msapplication-navbutton-color" content="#06aa5e">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Log in | Arinya</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/scripts.js" defer></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .form-header {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .input-container {
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        .input-container label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .input-container input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            background: #06aa5e;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background: #049c54;
+        }
+        .btm-text {
+            margin-top: 1rem;
+            text-align: center;
+        }
+        .btm-text-highlighted {
+            color: #06aa5e;
+            cursor: pointer;
+        }
+        .btm-text-highlighted:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main class="card-container">
+        <h1 class="company">Arinya</h1>
+        <form id="loginForm">
+            <h1 class="form-header">Welcome Back</h1>
+            <div class="input-container">
+                <label for="mail">E-mail</label>
+                <input type="email" name="mail" id="mail" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-container">
+                <label for="user-password">Password</label>
+                <input type="password" name="user-password" id="user-password" class="user-password" required>
+                <div class="error"></div>
+            </div>
+            <button type="submit" class="submit-btn">Log In</button>
+            <p class="btm-text">
+                Don't have an account..? <a href="signup.html"><span class="btm-text-highlighted">Sign Up</span></a> <br>
+                <a href="admin.html"><span class="btm-text-highlighted">Admin</span></a>
+            </p>
+        </form>
+    </main>
+</body>
+</html>
+  

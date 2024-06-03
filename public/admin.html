@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product | Admin Panel</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <main class="card-container slideUp-animation">
+        <div class="image-container">
+            <h1 class="company">Admin Panel</h1>
+        </div>
+        <form id="addProductForm">
+            <div class="form-container slideRight-animation">
+                <h1 class="form-header">Add New Product</h1>
+                <div class="input-container">
+                    <label for="product-name">Product Name</label>
+                    <input type="text" name="product-name" id="product-name" required>
+                    <div class="error"></div>
+                </div>
+                <div class="input-container">
+                    <label for="product-description">Product Description</label>
+                    <textarea name="product-description" id="product-description" required></textarea>
+                    <div class="error"></div>
+                </div>
+                <div class="input-container">
+                    <label for="product-price">Price</label>
+                    <input type="number" name="product-price" id="product-price" required>
+                    <div class="error"></div>
+                </div>
+                <div class="input-container">
+                    <label for="product-stock">Stock</label>
+                    <input type="number" name="product-stock" id="product-stock" required>
+                    <div class="error"></div>
+                </div>
+                <button type="submit" class="submit-btn">Add Product</button>
+                <p class="btm-text">
+                    <a href="login.html"><span class="btm-text-highlighted">Back to Login</span></a>
+                </p>
+            </div>
+        </form>
+    </main>
+    <script src="./assets/js/admin.js" defer></script>
+</body>
+</html>
