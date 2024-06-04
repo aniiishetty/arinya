@@ -11,6 +11,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public'))); // Serve static files from the 'public' directory
+app.use('/assets', express.static(path.join(__dirname, 'assets'))); // Serve static files from the 'assets' directory
 
 // Set EJS as the template engine
 app.set('view engine', 'ejs');
